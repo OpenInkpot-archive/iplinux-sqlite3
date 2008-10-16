@@ -1772,7 +1772,7 @@ int sqlite3_set_authorizer(
 ** INVARIANTS:
 **
 ** {F12551} The second parameter to an 
-**          [sqlite3_set_authorizer | authorizer callback is always an integer
+**          [sqlite3_set_authorizer | authorizer callback] is always an integer
 **          [SQLITE_COPY | authorizer code] that specifies what action
 **          is being authorized.
 **

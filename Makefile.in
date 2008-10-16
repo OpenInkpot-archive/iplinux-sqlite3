@@ -714,9 +714,13 @@ clean:
 	rm -f $(PUBLISH)
 	rm -f *.da *.bb *.bbg gmon.out
 	rm -f testfixture$(TEXE) test.db
+	[ -f doc/lemon.html ] && mv doc/lemon.html doc/report1.txt .
+	rm -rf doc/*
+	[ -f lemon.html ] && mv lemon.html report1.txt doc/
 	rm -f common.tcl
 	rm -f sqlite3.dll sqlite3.lib sqlite3.def
 	rm -f sqlite3.c .target_source
+	rm -f last_change
 
 distclean:	clean
 	rm -f config.log config.status libtool Makefile sqlite3.pc

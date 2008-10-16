@@ -1,0 +1,24 @@
+diff -Nur sqlite3-3.5.8.orig/configure sqlite3-3.5.8/configure
+--- sqlite3-3.5.8.orig/configure	2008-05-03 09:30:14.000000000 +0200
++++ sqlite3-3.5.8/configure	2008-05-03 09:31:26.394003318 +0200
+@@ -21204,7 +21204,7 @@
+ fi
+ 
+ if test "${use_loadextension}" = "yes" ; then
+-  LOADEXTENSION_FLAGS=""
++  LOADEXTENSION_FLAGS="-ldl"
+ else
+   LOADEXTENSION_FLAGS="-DSQLITE_OMIT_LOAD_EXTENSION=1"
+ fi
+diff -Nur sqlite3-3.5.8.orig/configure.ac sqlite3-3.5.8/configure.ac
+--- sqlite3-3.5.8.orig/configure.ac	2008-04-15 13:55:37.000000000 +0200
++++ sqlite3-3.5.8/configure.ac	2008-05-03 09:31:50.200003528 +0200
+@@ -606,7 +606,7 @@
+       [Enable loading of external extensions]),
+       [use_loadextension=$enableval],[use_loadextension=no])
+ if test "${use_loadextension}" = "yes" ; then
+-  LOADEXTENSION_FLAGS=""
++  LOADEXTENSION_FLAGS="-ldl"
+ else
+   LOADEXTENSION_FLAGS="-DSQLITE_OMIT_LOAD_EXTENSION=1"
+ fi
