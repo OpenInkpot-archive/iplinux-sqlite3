@@ -1,3 +1,9 @@
+sqlite3 (3.5.9-6.oi1) unstable; urgency=low
+
+  * packaging for OpenInkpot
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Wed, 05 Nov 2008 19:59:50 +0000
+
 sqlite3 (3.5.9-6) unstable; urgency=low
 
   * Make sqlite3 depends on the exact Debian version of libsqlite3-0
