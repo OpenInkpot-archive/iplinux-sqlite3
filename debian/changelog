@@ -1,3 +1,13 @@
+sqlite3 (3.6.20-1) asimov; urgency=low
+
+  * New upstream version:
+    - use amalgamated source code,
+    - drop obsolete patechs.
+  * Do not install .la files
+  * Cleanup packaging
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Wed, 18 Nov 2009 19:32:04 +0600
+
 sqlite3 (3.5.9-6.ip1+b1) asimov; urgency=low
 
   * Rebuild with new toolchain.
