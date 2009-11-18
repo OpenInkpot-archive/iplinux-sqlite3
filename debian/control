@@ -2,8 +2,8 @@ Source: sqlite3
 Section: core
 Priority: optional
 Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
-Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), libtool (>= 1.5.2), autotools-dev
-XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), libtool (>= 1.5.2), autotools-dev, cdbs-embedded
+Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), libtool (>= 1.5.2), autotools-dev, automake
+XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), libtool (>= 1.5.2), autotools-dev, cdbs-embedded, automake
 Standards-Version: 3.8.0
 
 Package: sqlite3
