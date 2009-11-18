@@ -1,9 +1,9 @@
 Source: sqlite3
 Section: core
 Priority: optional
-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
-Build-Depends: cdbs (>= 0.4.15), debhelper (>= 4.1.16), autoconf (>= 2.59), libtool (>= 1.5.2), automake, autotools-dev, tcl8.4, cdbs-embedded
-XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), autoconf (>= 2.59), libtool (>= 1.5.2), automake, autotools-dev, tcl8.4, cdbs-embedded
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), libtool (>= 1.5.2), autotools-dev
+XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.15), debhelper (>= 7), libtool (>= 1.5.2), autotools-dev, cdbs-embedded
 Standards-Version: 3.8.0
 
 Package: sqlite3
@@ -25,7 +25,7 @@ Description: SQLite 3 shared library
 Package: libsqlite3-dev
 Section: libdevel
 Architecture: any
-Depends: libsqlite3-0 (= ${binary:Version}), libc6-dev
+Depends: libsqlite3-0 (= ${binary:Version})
 Description: SQLite 3 development files
  SQLite is a C library that implements an SQL database engine. 
  Programs that link with the SQLite library can have SQL database 
